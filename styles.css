@@ -12,9 +12,19 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; /* Center items vertically */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Header Styles */
+
+.header-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    padding: 20px; 
+    overflow: hidden; /* Prevent overflow */
+}
 header {
     position: fixed;
     top: 20px;
@@ -32,6 +42,12 @@ header {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+    header {
+        width: 90%; 
+    }
 
 
 /* Translucent Header */
