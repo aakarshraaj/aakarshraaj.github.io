@@ -43,6 +43,15 @@ header {
     background: transparent; /* Remove background to see dynamic effect */
 }
 
+/* Logo Styles */
+header img {
+    max-height: 50px; /* Set maximum height for the logo */
+    height: auto; /* Maintain aspect ratio */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Spacing between logo and text */
+}
+
+
 
 .header-content {
     display: flex;
