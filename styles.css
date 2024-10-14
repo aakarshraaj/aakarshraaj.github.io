@@ -182,11 +182,9 @@ nav {
 .project img {
     width: 100%;
     height: auto; /* Ensures the image maintains its aspect ratio */
-    border-radius: 50%; /* Create a circle */
-    border-radius: 30%; /* Adjust this value for a squircle effect */
+    border-radius: 24%; /* Create a circle */
+    border-radius: 16%; /* Adjust this value for a squircle effect */
     object-fit: cover;
-    /* For a true squircle effect, you can also try using a pseudo-element */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: add some shadow for depth */
 }
 
 
