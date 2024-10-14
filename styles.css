@@ -43,6 +43,21 @@ header {
     background: transparent; /* Remove background to see dynamic effect */
 }
 
+/* Social Link Styles */
+.social-links a {
+    color: #4AB1F1; /* Change to your preferred color */
+    text-decoration: none; /* Remove underline */
+    padding: 5px 10px; /* Add some padding */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition for hover effect */
+}
+
+.social-links a:hover {
+    background-color: rgba(74, 177, 241, 0.2); /* Light background on hover */
+    color: #22242C; /* Change text color on hover */
+}
+
+
 /* Logo Styles */
 header img {
     max-height: 50px; /* Set maximum height for the logo */
