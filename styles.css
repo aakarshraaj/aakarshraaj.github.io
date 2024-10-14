@@ -1,66 +1,30 @@
+/* Universal Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 body {
     font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
+    color: #22242C;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Header Styles */
 header {
     position: relative;
     height: 60px; /* Adjust based on your design */
     display: flex;
     align-items: center;
-    background-color: white; /* Adjust or remove if using a background image */
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0 20px; /* Adjust based on your design */
-}
-
-.logo {
-    flex: 0 1 auto; /* Prevents the logo from growing */
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-}
-
-.nav-links li {
-    margin: 0 15px; /* Adjust spacing between links */
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #333; /* Adjust color as needed */
-    font-weight: 600; /* Adjust font weight as needed */
-}
-
-.bg-gradient {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; /* Adjust based on your needs */
-    z-index: -1; /* Places the gradient behind other elements */
-}
-
-.intro {
     padding: 20px;
-    text-align: center;
+    max-width: 760px;
+    width: 100%;
 }
-
-
 
 .translucent-header {
     position: fixed;
@@ -68,15 +32,11 @@ nav {
     left: 0;
     width: 100%;
     background: rgba(255, 255, 255, 0.5); /* Translucent background */
-    backdrop-filter: blur(10px); /* Adds a blur effect behind the header */
+    backdrop-filter: blur(10px); /* Blur effect behind the header */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    padding: 10px 20px;
     z-index: 1000;
-    display: flex; /* Use flex to align items in the header */
-    justify-content: center; /* Center the content horizontally */
 }
 
-/* CSS styles for centering the header content */
 .header-content {
     display: flex;
     align-items: center;
@@ -86,16 +46,51 @@ nav {
     padding: 0 20px;
 }
 
-.signature {
-    height: 50px;
-    margin-right: 20px;
+.logo {
+    flex: 0 1 auto; /* Prevents the logo from growing */
 }
 
-.social-links {
+.nav-links {
+    list-style: none;
     display: flex;
-    gap: 15px;
 }
 
+.nav-links li {
+    margin-left: 20px; /* Spacing between links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #0A0A0D;
+    font-weight: 600;
+}
+
+/* Gradient Background */
+.bg-gradient {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%; /* Adjust based on your needs */
+    z-index: -1; /* Places the gradient behind other elements */
+}
+
+/* Intro Section */
+.intro {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Signature Styles */
+.signature {
+    width: 100%;
+    max-width: 300px; /* Adjust as needed */
+    height: auto;
+    transform: rotate(4deg);
+    margin-bottom: 20px; /* Space below the signature */
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* Resume Button */
 .resume-button {
     display: inline-flex;
     align-items: center;
@@ -113,99 +108,15 @@ nav {
 .resume-button:hover {
     background-color: #000; /* Black fill on hover */
     color: #fff; /* White text on hover */
-    border-color: #000; /* Ensure the border blends into the fill */
 }
 
-.icon {
-    width: 16px;
-    height: 16px;
-    fill: currentColor; /* Makes the icon match the text color */
-    transition: fill 0.3s ease;
-}
-
-body {
-    font-family: 'Inter', sans-serif;
-    color: #22242C;
-    line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.bg-gradient {
-    position: absolute;
-    top: 0;
-    width: 1200px;
-    height: 480px;
-    max-width: 100%;
-}
-
-header {
-    padding: 20px;
-    max-width: 760px;
-    position: relative;
-    width: 100%;
-}
-
-main {
-    max-width: 760px;
-    padding: 20px;
-}
-
-section {
-    width: 100%;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    padding: 12px;
-    border-radius: 4px;
-    background: whitesmoke;
-    width: 100%;
-}
-
-.signature {
-    width: 100%;
-    max-width: 300px; /* You can adjust the maximum size as needed */
-    height: auto;
-    transform: rotate(4deg);
-    margin-bottom: 20px; /* Adds space below the signature */
-    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Smooth transition for hover effect */
-}
-
-/*.signature:hover {
-    transform: rotate(0deg) scale(1.05); /* Slightly straightens and enlarges on hover */
-}
-*/
-
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin-left: 20px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #0A0A0D;
-}
-
+/* Profile Image and Text */
 .profile-image {
-   display: flex;
-   align-items: center;
-   margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
 }
 
-/* .profile-image img {
-    border-radius: 50%;
-    width: 100px;
-    margin-right: 16px;
-}
-*/
 .profile-text h1 {
     font-size: 2rem;
     margin-bottom: 12px;
@@ -216,6 +127,7 @@ nav {
     font-size: 20px;
 }
 
+/* Image Carousel */
 .image-carousel {
     width: 100%;
     overflow: hidden;
@@ -224,14 +136,12 @@ nav {
     display: flex;
 }
 
-/* Wrapper that contains all the images */
 .carousel-wrapper {
     flex: 0 0 auto;
     min-width: 100%;
     animation: scroll 30s linear infinite;
 }
 
-/* Individual images */
 .carousel-wrapper img {
     height: 22px;
     width: auto;
@@ -250,6 +160,7 @@ nav {
     }
 }
 
+/* Featured Projects Section */
 .featured-projects {
     padding: 40px 0;
 }
@@ -315,6 +226,7 @@ nav {
     opacity: 0.6;
 }
 
+/* Recent Stories Section */
 .recent-stories {
     padding: 40px 0;
 }
@@ -375,8 +287,9 @@ nav {
     margin-top: 4px;
 }
 
+/* Say Hi Section */
 .say-hi {
-    background: linear-gradient(120deg, #f0f4ff 0%, #fff6fa 100%); /* Retained original gradient background */
+    background: linear-gradient(120deg, #f0f4ff 0%, #fff6fa 100%); /* Gradient background */
     border-radius: 16px;
     padding: 40px;
     display: flex;
@@ -394,7 +307,7 @@ nav {
 
 .say-hi h2 {
     font-size: 36px;
-    background: linear-gradient(90deg, #4AB1F1, #D749AF); /* Retained gradient for text */
+    background: linear-gradient(90deg, #4AB1F1, #D749AF); /* Gradient for text */
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -404,7 +317,7 @@ nav {
 .say-hi p {
     font-size: 18px;
     margin-bottom: 16px;
-    color: #333; /* Kept original text color */
+    color: #333; /* Original text color */
 }
 
 .say-hi p a {
@@ -417,6 +330,7 @@ nav {
     height: auto;
 }
 
+/* Footer Styles */
 .footer {
     background: #22242C; /* Footer background */
     color: white; /* Footer text color */
@@ -436,31 +350,21 @@ nav {
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .projects-grid {
-        grid-template-columns: 1fr; /* Stack projects on smaller screens */
-    }
-    
-    .header-content {
-        flex-direction: column; /* Stack header items */
-        align-items: center; /* Center header items */
+        grid-template-columns: 1fr; /* Single column for smaller screens */
     }
 
     .say-hi {
-        flex-direction: column; /* Stack content on smaller screens */
-        align-items: flex-start; /* Align items to the start */
+        flex-direction: column;
+        align-items: center;
     }
-}
 
-@media (max-width: 480px) {
-    .signature {
-        max-width: 100%; /* Make signature responsive */
-    }
-    
-    .resume-button {
-        width: 100%; /* Full width for buttons on small screens */
-        text-align: center; /* Center text */
+    .say-hi-content {
+        max-width: 100%; /* Full width for smaller screens */
+        text-align: center; /* Center align text */
     }
 
     .say-hi img {
-        width: 100%; /* Make image responsive */
+        width: 100%; /* Full width image for smaller screens */
+        height: auto;
     }
 }
