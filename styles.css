@@ -4,6 +4,64 @@
     box-sizing: border-box;
 }
 
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    height: 60px; /* Adjust based on your design */
+    display: flex;
+    align-items: center;
+    background-color: white; /* Adjust or remove if using a background image */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px; /* Adjust based on your design */
+}
+
+.logo {
+    flex: 0 1 auto; /* Prevents the logo from growing */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px; /* Adjust spacing between links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333; /* Adjust color as needed */
+    font-weight: 600; /* Adjust font weight as needed */
+}
+
+.bg-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Adjust based on your needs */
+    z-index: -1; /* Places the gradient behind other elements */
+}
+
+.intro {
+    padding: 20px;
+    text-align: center;
+}
+
+
+
 .translucent-header {
     position: fixed;
     top: 0;
