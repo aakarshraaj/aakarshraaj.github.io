@@ -247,35 +247,71 @@ nav {
 }
 
 .say-hi {
-    background: linear-gradient(90deg,rgba(255,233,244,0.4) 0%,rgba(234,243,255,0.7) 100%);
+    background: linear-gradient(120deg, #f0f4ff 0%, #fff6fa 100%);
     border-radius: 16px;
     padding: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 20px;
+    gap: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
 }
 
-.say-hi img {
-    width: 40%;
-    margin: -40px 0;
+.say-hi-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
 }
 
 .say-hi h2 {
-    font-size: 48px;
-    margin-bottom: 10px;
-    background-size: 100%;
-    background-repeat: repeat;
+    font-size: 36px;
+    background: linear-gradient(90deg, #4AB1F1, #D749AF);
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-color: #566CEC;
-    background-image: linear-gradient(90.42deg,#4AB1F1 0.58%,#566CEC 37.22%,#D749AF 73.87%,#FF7C51 112.26%);
+    margin-bottom: 16px;
 }
 
 .say-hi p {
-    font-size: 20px;
-    color: #22242C;
+    font-size: 18px;
+    margin-bottom: 16px;
+    color: #333;
 }
+
+.say-hi p a {
+    color: #4AB1F1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.say-hi p a:hover {
+    text-decoration: underline;
+}
+
+.resume-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #566CEC;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 0 4px 12px rgba(86, 108, 236, 0.4);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-button:hover {
+    background: #4AB1F1;
+    box-shadow: 0 6px 16px rgba(74, 177, 241, 0.4);
+}
+
+.say-hi img {
+    width: 30%;
+    max-width: 200px;
+    border-radius: 12px;
+}
+
 
 .contact a {
     display: inline-block;
