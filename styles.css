@@ -113,13 +113,15 @@ header img {
     width: 100%; /* Ensure full width */
     margin: 0 auto; /* Center the section *
 }
-    .featured-projects h2 {
+    
+.featured-projects h2 {
     font-size: 14px;
     margin-bottom: 30px;
     text-transform: uppercase;
     color: #4A576FB2;
     opacity: 0.7;
     letter-spacing: 3px;
+    }
 
 .projects-grid {
     display: grid;
