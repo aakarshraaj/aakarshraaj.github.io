@@ -29,8 +29,7 @@ header {
     width: 100%;
 }
 
-
-main{
+main {
     max-width: 760px;
     padding: 20px;
 }
@@ -48,7 +47,7 @@ nav {
     width: 100%;
 }
 
-.signature{
+.signature {
     width: 120px;
     transform: rotate(4deg);
 }
@@ -201,7 +200,31 @@ nav {
 }
 
 .story {
-  margin-bottom: 48px;
+    position: relative; 
+    overflow: hidden; 
+    cursor: pointer;
+    padding: 12px;
+    margin: -12px;
+    border-radius: 8px;
+    background: transparent;
+}
+
+.story::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(258.32deg, #FBFBFD 0%, #E795B7 32.71%, #935893 65.43%, #224D88 98.14%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: inherit;
+    z-index: -1; 
+}
+
+.story:hover::before {
+    opacity: 0.1;
 }
 
 .story h3 {
@@ -210,9 +233,9 @@ nav {
 }
 
 .story .description {
-  font-size: 16px;
-  color: #808080;
-  font-weight: 300;
+    font-size: 16px;
+    color: #808080;
+    font-weight: 300;
 }
 
 .story .date {
@@ -224,18 +247,18 @@ nav {
 }
 
 .say-hi {
-   background: linear-gradient(90deg,rgba(255,233,244,0.4) 0%,rgba(234,243,255,0.7) 100%);
-   border-radius: 16px;
-   padding: 40px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin-right: 20px;
+    background: linear-gradient(90deg,rgba(255,233,244,0.4) 0%,rgba(234,243,255,0.7) 100%);
+    border-radius: 16px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
 }
 
 .say-hi img {
     width: 40%;
-    margin:  -40px 0;
+    margin: -40px 0;
 }
 
 .say-hi h2 {
@@ -286,7 +309,7 @@ footer #list-items .link-items {
     opacity: 0.7;
 }
 
-footer .quote{
+footer .quote {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -295,15 +318,15 @@ footer .quote{
     margin-top: 32px;
 }
 
-footer .quote p{
-   margin: 0 16px;
+footer .quote p {
+    margin: 0 16px;
 }
 
-footer .quote .left{
-   transform: rotateY(180deg);
- }
+footer .quote .left {
+    transform: rotateY(180deg);
+}
 
-.bg-gradient-bottom{
+.bg-gradient-bottom {
     position: absolute;
     bottom: 0;
     width: 1200px;
@@ -311,4 +334,3 @@ footer .quote .left{
     max-width: 100%;
     transform: rotate(180deg);
 }
-
