@@ -46,17 +46,19 @@
 }
 
 .resume-button {
-    background-color: #007BFF;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-left: 20px;
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #000; /* Change to your desired background color */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Removes the underline */
+    border-radius: 6px; /* Rounded corners */
+    font-weight: 600; /* Makes the text bold */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
 }
 
 .resume-button:hover {
-    background: #4AB1F1; /* Lighter blue on hover */
-    transform: translateY(-2px); /* Subtle lift effect */
+    background-color: #333; /* Slightly lighter background on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
 }
 
 
