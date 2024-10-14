@@ -107,13 +107,14 @@ header img {
 
 
 /* Featured Projects Section */
+/* Featured Projects Section */
 .featured-projects {
     padding: 40px 0;
     max-width: 720px; /* Maintain max-width */
     width: 100%; /* Ensure full width */
-    margin: 0 auto; /* Center the section *
+    margin: 0 auto; /* Center the section */
 }
-    
+
 .featured-projects h2 {
     font-size: 14px;
     margin-bottom: 30px;
@@ -121,14 +122,21 @@ header img {
     color: #4A576FB2;
     opacity: 0.7;
     letter-spacing: 3px;
-    }
+}
 
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr); /* Single column for smaller screens */
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Use auto-fill with a minimum width for cards */
     gap: 36px;
 }
+
+/* Media Query for Larger Screens */
+@media (min-width: 600px) {
+    .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Use auto-fill with a minimum width for cards */
+    }
+}
+
 
 .project {
     padding: 12px;
