@@ -35,7 +35,6 @@ header {
 
 /* Translucent Header */
 .translucent-header {
-    position: relative;
     width: 100%;
     background: transparent; /* Remove background to see dynamic effect */
 }
