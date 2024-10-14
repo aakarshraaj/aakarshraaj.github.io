@@ -16,16 +16,27 @@
     z-index: 1000;
 }
 
+/* CSS styles for centering the header content */
+.translucent-header {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .header-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
 }
 
 .signature {
-    height: 40px; /* Adjust size as needed */
+    height: 50px;
     margin-right: 20px;
 }
 
@@ -34,26 +45,13 @@
     gap: 15px;
 }
 
-.social-links a {
-    color: #333;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s;
-}
-
-.social-links a:hover {
-    color: #4AB1F1; /* Hover effect color */
-}
-
 .resume-button {
-    background: #333; /* Dark background for the button */
+    background-color: #007BFF;
     color: #fff;
-    padding: 8px 16px;
-    border-radius: 20px;
+    padding: 10px 20px;
     text-decoration: none;
-    font-size: 16px;
-    transition: background 0.3s ease, transform 0.2s;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    border-radius: 5px;
+    margin-left: 20px;
 }
 
 .resume-button:hover {
