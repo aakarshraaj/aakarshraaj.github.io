@@ -15,31 +15,25 @@ body {
 }
 
 /* Header Styles */
-}
+/* Header Styles */
 header {
-    position: fixed;
-    top: 20px;
+    position: fixed; /* Fixed positioning */
+    top: 20px; /* Adjust the vertical position */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Center the header */
     height: 60px;
     display: flex;
     align-items: center;
     padding: 0 20px;
-    max-width: 720px; /* Set a maximum width */
-    width: 100%; /* Ensure full width */
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px);
-    border-radius: 24px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    max-width: 1000px; /* Set a maximum width */
+    max-width: 720px; /* Set maximum width to 720px */
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blurring effect */
+    border-radius: 24px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    z-index: 1000; /* Keep it on top */
 }
-
-/* Media Query for Mobile Responsiveness */
-@media (max-width: 768px) {
-    header {
-        width: 90%; 
-    }
-
 
 /* Translucent Header */
 .translucent-header {
@@ -74,6 +68,7 @@ header img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 1200px; /* Adjusted max-width */
     max-width: 720px; /* Adjusted max-width */
     width: 100%;
     padding: 0 20px;
@@ -92,6 +87,7 @@ header img {
 .intro {
     padding: 20px;
     text-align: center;
+    max-width: 1200px; /* Added max-width */
     max-width: 720px; /* Added max-width */
 }
 
@@ -178,7 +174,8 @@ header img {
 /* Featured Projects Section */
 .featured-projects {
     padding: 40px 0;
-    max-width: 720px; /* Maintain max-width */
+    max-width: 1200px; /* Added max-width */
+    max-width: 720px; /* Added max-width */
     width: 100%; /* Ensure full width */
     margin: 0 auto; /* Center the section */
 }
@@ -194,10 +191,10 @@ header img {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Use auto-fill with a minimum width for cards */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr); /* Single column for smaller screens */
     gap: 36px;
 }
-
 
 .project {
     padding: 12px;
@@ -248,6 +245,7 @@ header img {
 /* Recent Stories Section */
 .recent-stories {
     padding: 40px 0;
+    max-width: 1200px; /* Added max-width */
     max-width: 720px; /* Added max-width */
     width: 100%; /* Ensure full width */
     margin: 0 auto; /* Center the section */
@@ -319,20 +317,36 @@ header img {
     align-items: center;
     gap: 20px;
     margin: 20px auto; /* Centered with auto margins */
+    max-width: 1200px; /* Added max-width */
     max-width: 720px; /* Added max-width */
 }
 
 .say-hi-content {
     display: flex;
     flex-direction: column;
+    max-width: 60%;
+}
+.say-hi h2 {
+    font-size: 36px;
+    background: linear-gradient(90deg, #4AB1F1, #D749AF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 16px;
     max-width: 70%; /* Allow some space for the button */
 }
 
 .say-hi p {
+    font-size: 18px;
+    margin-bottom: 16px;
+    color: #333;
     font-size: 16px;
     opacity: 0.9;
 }
 
+.say-hi p a {
+    color: #4AB1F1;
+    text-decoration: underline;
 .say-hi a {
     padding: 10px 20px;
     border: 2px solid #000;
@@ -342,15 +356,45 @@ header img {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.say-hi img {
+    width: 200px;
+    height: auto;
 .say-hi a:hover {
     background-color: #000;
     color: #fff;
 }
 
 /* Footer Styles */
+.footer {
+    background: #22242C;
+    color: white;
 footer {
     padding: 20px;
     text-align: center;
+}
+.footer a {
+    color: #4AB1F1;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    .say-hi {
+        flex-direction: column;
+        align-items: center;
+    }
+    .say-hi-content {
+        max-width: 100%;
+        text-align: center;
+    }
+    .say-hi img {
+        width: 100%;
+        height: auto;
+    }
     max-width: 720px; /* Added max-width */
     width: 100%; /* Ensure full width */
-}
