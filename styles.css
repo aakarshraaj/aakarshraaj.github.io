@@ -15,6 +15,13 @@ body {
     align-items: center;
 }
 
+/* Container for centering content */
+.container {
+    max-width: 1200px; /* Set maximum width */
+    width: 100%; /* Make sure it takes full width */
+    padding: 0 20px; /* Add padding for smaller screens */
+}
+
 /* Header Styles */
 header {
     position: relative;
@@ -340,31 +347,27 @@ header {
 
 .footer a {
     color: #4AB1F1; /* Link color */
-    text-decoration: none; /* No underline */
+    text-decoration: none;
 }
 
 .footer a:hover {
     text-decoration: underline; /* Underline on hover */
 }
 
-/* Media Queries for Responsiveness */
+/* Media Queries */
 @media (max-width: 768px) {
     .projects-grid {
-        grid-template-columns: 1fr; /* Single column for smaller screens */
+        grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns on smaller screens */
     }
 
     .say-hi {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Stack Say Hi content vertically */
+        text-align: center; /* Center-align text */
     }
+}
 
-    .say-hi-content {
-        max-width: 100%; /* Full width for smaller screens */
-        text-align: center; /* Center align text */
-    }
-
-    .say-hi img {
-        width: 100%; /* Full width image for smaller screens */
-        height: auto;
+@media (max-width: 480px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* Single column for very small screens */
     }
 }
