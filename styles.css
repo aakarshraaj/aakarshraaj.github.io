@@ -15,7 +15,6 @@ body {
 }
 
 /* Header Styles */
-/* Header Styles */
 header {
     position: fixed; /* Fixed positioning */
     top: 20px; /* Adjust the vertical position */
@@ -25,7 +24,6 @@ header {
     display: flex;
     align-items: center;
     padding: 0 20px;
-    max-width: 1000px; /* Set a maximum width */
     max-width: 720px; /* Set maximum width to 720px */
     width: 100%;
     background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
@@ -68,7 +66,6 @@ header img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px; /* Adjusted max-width */
     max-width: 720px; /* Adjusted max-width */
     width: 100%;
     padding: 0 20px;
@@ -87,7 +84,6 @@ header img {
 .intro {
     padding: 20px;
     text-align: center;
-    max-width: 1200px; /* Added max-width */
     max-width: 720px; /* Added max-width */
 }
 
@@ -172,15 +168,12 @@ header img {
 }
 
 /* Featured Projects Section */
-/* Featured Projects Section */
 .featured-projects {
     padding: 40px 0;
-    max-width: 720px; /* Added max-width */
     max-width: 720px; /* Maintain max-width */
     width: 100%; /* Ensure full width */
     margin: 0 auto; /* Center the section */
 }
-@@ -186,10 +186,11 @@ header img {
 
 .projects-grid {
     display: grid;
@@ -238,8 +231,7 @@ header img {
 /* Recent Stories Section */
 .recent-stories {
     padding: 40px 0;
-    max-width: 1200px; /* Added max-width */
-    max-width: 720px; /* Added max-width */
+    max-width: 720px; /* Maintain max-width */
     width: 100%; /* Ensure full width */
     margin: 0 auto; /* Center the section */
 }
@@ -310,8 +302,7 @@ header img {
     align-items: center;
     gap: 20px;
     margin: 20px auto; /* Centered with auto margins */
-    max-width: 1200px; /* Added max-width */
-    max-width: 720px; /* Added max-width */
+    max-width: 720px; /* Maintain max-width */
 }
 
 .say-hi-content {
@@ -319,6 +310,7 @@ header img {
     flex-direction: column;
     max-width: 60%;
 }
+
 .say-hi h2 {
     font-size: 36px;
     background: linear-gradient(90deg, #4AB1F1, #D749AF);
@@ -326,68 +318,60 @@ header img {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 16px;
-    max-width: 70%; /* Allow some space for the button */
 }
 
 .say-hi p {
     font-size: 18px;
-    margin-bottom: 16px;
-    color: #333;
-    font-size: 16px;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
-.say-hi p a {
-    color: #4AB1F1;
-    text-decoration: underline;
 .say-hi a {
     padding: 10px 20px;
-    border: 2px solid #000;
-    color: #000;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.say-hi img {
-    width: 200px;
-    height: auto;
-.say-hi a:hover {
-    background-color: #000;
+    border-radius: 24px;
+    background-color: #4AB1F1;
     color: #fff;
+    text-decoration: none;
 }
 
 /* Footer Styles */
-.footer {
-    background: #22242C;
-    color: white;
 footer {
-    padding: 20px;
+    background: #F8F9FA; /* Light gray background for footer */
+    padding: 20px 0;
+    width: 100%; /* Full width */
     text-align: center;
+    position: relative; /* Allows positioning for footer elements */
+    z-index: 100; /* Keep footer on top */
 }
-.footer a {
-    color: #4AB1F1;
-    text-decoration: none;
-}
-.footer a:hover {
-    text-decoration: underline;
-}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+
     .projects-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
     }
+
     .say-hi {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Stack elements vertically on smaller screens */
     }
+
     .say-hi-content {
-        max-width: 100%;
-        text-align: center;
+        max-width: 100%; /* Allow full width */
     }
-    .say-hi img {
-        width: 100%;
-        height: auto;
+
+    .recent-stories h2 {
+        font-size: 18px; /* Larger title font size */
     }
-    max-width: 720px; /* Added max-width */
-    width: 100%; /* Ensure full width */
+}
+
+@media (max-width: 480px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* One column on small screens */
+    }
+
+    .say-hi h2 {
+        font-size: 28px; /* Smaller font size for mobile */
+    }
+}
