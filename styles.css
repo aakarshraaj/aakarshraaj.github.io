@@ -170,7 +170,7 @@ header img {
 /* Featured Projects Section */
 .featured-projects {
     padding: 40px 0;
-    max-width: 720px; /* Added max-width */
+    max-width: 720px; /* Maintain max-width */
     width: 100%; /* Ensure full width */
     margin: 0 auto; /* Center the section */
 }
@@ -186,9 +186,10 @@ header img {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(1, 1fr); /* Single column for smaller screens */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Use auto-fill with a minimum width for cards */
     gap: 36px;
 }
+
 
 .project {
     padding: 12px;
