@@ -52,14 +52,12 @@ nav {
     max-width: 300px; /* You can adjust the maximum size as needed */
     height: auto;
     transform: rotate(4deg);
-    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2)); /* Adds a subtle shadow for depth */
     margin-bottom: 20px; /* Adds space below the signature */
     transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Smooth transition for hover effect */
 }
 
 .signature:hover {
     transform: rotate(0deg) scale(1.05); /* Slightly straightens and enlarges on hover */
-    filter: drop-shadow(4px 6px 10px rgba(0, 0, 0, 0.3)); /* Makes the shadow deeper on hover */
 }
 
 }
