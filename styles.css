@@ -56,10 +56,10 @@ nav {
     transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Smooth transition for hover effect */
 }
 
-.signature:hover {
+/*.signature:hover {
     transform: rotate(0deg) scale(1.05); /* Slightly straightens and enlarges on hover */
 }
-
+*/
 }
 
 .nav-links {
