@@ -31,7 +31,7 @@ header {
     width: 100%;
     background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
     backdrop-filter: blur(10px); /* Blurring effect */
-    border-radius: 20px; /* Rounded corners */
+    border-radius: 24px; /* Rounded corners */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
     z-index: 1000; /* Keep it on top */
 }
