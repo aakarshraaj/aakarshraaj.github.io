@@ -260,7 +260,7 @@ nav {
 }
 
 .say-hi {
-    background: linear-gradient(120deg, #1a1a1a 0%, #333 100%); /* Dark gradient background */
+    background: linear-gradient(120deg, #f0f4ff 0%, #fff6fa 100%); /* Retained original gradient background */
     border-radius: 16px;
     padding: 40px;
     display: flex;
@@ -288,11 +288,11 @@ nav {
 .say-hi p {
     font-size: 18px;
     margin-bottom: 16px;
-    color: #e0e0e0; /* Light gray for better contrast */
+    color: #333; /* Kept original text color */
 }
 
 .say-hi p a {
-    color: #4AB1F1; /* Retained original color */
+    color: #4AB1F1; /* Retained original link color */
     text-decoration: none;
     font-weight: bold;
 }
@@ -304,7 +304,7 @@ nav {
 .resume-button {
     display: inline-block;
     padding: 12px 20px;
-    background: #444; /* Darker button background */
+    background: #222; /* Dark background for the button */
     color: #fff; /* White text for button */
     text-decoration: none;
     border-radius: 8px;
@@ -313,8 +313,8 @@ nav {
 }
 
 .resume-button:hover {
-    background: #4AB1F1; /* Retained hover color */
-    box-shadow: 0 6px 16px rgba(74, 177, 241, 0.4);
+    background: #444; /* Darker hover color */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4); /* Subtle shadow effect */
 }
 
 .say-hi img {
