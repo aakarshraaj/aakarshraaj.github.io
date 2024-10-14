@@ -4,6 +4,68 @@
     box-sizing: border-box;
 }
 
+.translucent-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.5); /* Translucent background */
+    backdrop-filter: blur(10px); /* Adds a blur effect behind the header */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.signature {
+    height: 40px; /* Adjust size as needed */
+    margin-right: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #4AB1F1; /* Hover effect color */
+}
+
+.resume-button {
+    background: #333; /* Dark background for the button */
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.resume-button:hover {
+    background: #4AB1F1; /* Lighter blue on hover */
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+
+
+
+
+
 body {
     font-family: 'Inter', sans-serif;
     color: #22242C;
