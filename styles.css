@@ -182,7 +182,7 @@ nav {
 .project img {
     width: 100%;
     height: auto; /* Maintain aspect ratio */
-    clip-path: path('M 0, 10 C 0, 4 4, 0 10, 0 H 290 C 296, 0 300, 4 300, 10 C 300, 16 296, 20 290, 20 H 10 C 4, 20 0, 16 0, 10 Z');
+    border-radius: 4px;
     object-fit: cover; 
 }
 
