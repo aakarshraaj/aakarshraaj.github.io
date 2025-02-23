@@ -11,14 +11,15 @@ body {
     line-height: 1.6;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center items vertically */
+    align-items: center;
+    /* Center items vertically */
 }
 
 /* Header Styles */
 header {
-    position: sticky;
+    position: relative;
     top: 20px;
-    left: 50%;
+    left: 25%;
     transform: translateX(-50%);
     height: 60px;
     display: flex;
@@ -36,36 +37,49 @@ header {
 /* Translucent Header */
 .translucent-header {
     width: 100%;
-    background: transparent; /* Remove background to see dynamic effect */
+    background: transparent;
+    /* Remove background to see dynamic effect */
 }
 
 /* Social Link Styles */
 .social-links a {
-    color: #4AB1F1; /* Change to your preferred color */
-    text-decoration: none; /* Remove underline */
-    padding: 5px 10px; /* Add some padding */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transition for hover effect */
+    color: #4AB1F1;
+    /* Change to your preferred color */
+    text-decoration: none;
+    /* Remove underline */
+    padding: 5px 10px;
+    /* Add some padding */
+    border-radius: 5px;
+    /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Transition for hover effect */
 }
 
 .social-links a:hover {
-    background-color: rgba(74, 177, 241, 0.2); /* Light background on hover */
-    color: #22242C; /* Change text color on hover */
+    background-color: rgba(74, 177, 241, 0.2);
+    /* Light background on hover */
+    color: #22242C;
+    /* Change text color on hover */
 }
 
 /* Logo Styles */
 header img {
-    max-height: 50px; /* Set maximum height for the logo */
-    height: auto; /* Maintain aspect ratio */
-    width: auto; /* Maintain aspect ratio */
-    margin-right: 10px; /* Spacing between logo and text */
+    max-height: 50px;
+    /* Set maximum height for the logo */
+    height: auto;
+    /* Maintain aspect ratio */
+    width: auto;
+    /* Maintain aspect ratio */
+    margin-right: 10px;
+    /* Spacing between logo and text */
 }
 
 .header-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 720px; /* Adjusted max-width */
+    max-width: 720px;
+    /* Adjusted max-width */
     width: 100%;
     padding: 0 20px;
 }
@@ -75,7 +89,8 @@ header img {
 .intro {
     padding: 20px;
     text-align: center;
-    max-width: 720px; /* Added max-width */
+    max-width: 720px;
+    /* Added max-width */
 }
 
 /* Signature Styles */
@@ -89,19 +104,30 @@ header img {
 }
 
 .resume-button {
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Center items vertically */
-    padding: 10px 20px; /* Adjust padding as needed */
-    background-color: #007bff; /* Example background color */
-    color: white; /* Text color */
-    border: none; /* Remove default button border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer on hover */
+    display: flex;
+    /* Use flexbox for alignment */
+    align-items: center;
+    /* Center items vertically */
+    padding: 10px 20px;
+    /* Adjust padding as needed */
+    background-color: #007bff;
+    /* Example background color */
+    color: white;
+    /* Text color */
+    border: none;
+    /* Remove default button border */
+    border-radius: 1.5rem;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer on hover */
+    text-decoration: none;
 }
 
 .resume-button i {
-    margin-right: 8px; /* Space between icon and text */
-    font-size: 16px; /* Adjust icon size */
+    margin-right: 8px;
+    /* Space between icon and text */
+    font-size: 16px;
+    /* Adjust icon size */
 }
 
 
@@ -109,9 +135,12 @@ header img {
 /* Featured Projects Section */
 .featured-projects {
     padding: 40px 0;
-    max-width: 720px; /* Maintain max-width */
-    width: 100%; /* Ensure full width */
-    margin: 0 auto; /* Center the section */
+    max-width: 720px;
+    /* Maintain max-width */
+    width: 100%;
+    /* Ensure full width */
+    margin: 0 auto;
+    /* Center the section */
 }
 
 .featured-projects h2 {
@@ -125,14 +154,16 @@ header img {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(1, 1fr); /* Single column for smaller screens */
+    grid-template-columns: repeat(1, 1fr);
+    /* Single column for smaller screens */
     gap: 36px;
 }
 
 /* Media Query for Larger Screens */
 @media (min-width: 600px) {
     .projects-grid {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Use auto-fill with a minimum width for cards */
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        /* Use auto-fill with a minimum width for cards */
     }
 }
 
@@ -140,10 +171,10 @@ header img {
 .project {
     padding: 12px;
     margin: -12px;
-    border-radius: 8px;
+    border-radius: 12px;
     background: transparent;
-    position: relative; 
-    overflow: hidden; 
+    position: relative;
+    overflow: hidden;
     cursor: pointer;
 }
 
@@ -154,11 +185,11 @@ header img {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(258.32deg,#FBFBFD 0%,#E795B7 32.71%,#935893 65.43%,#224D88 98.14%);
-    opacity: 0; 
-    transition: opacity 0.5s ease; 
-    border-radius: inherit; 
-    z-index: -1; 
+    background: linear-gradient(258.32deg, #FBFBFD 0%, #E795B7 32.71%, #935893 65.43%, #224D88 98.14%);
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    border-radius: inherit;
+    z-index: -1;
 }
 
 .project:hover::before {
@@ -169,7 +200,7 @@ header img {
     width: 100%;
     height: auto;
     border-radius: 8px;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 .project h3 {
@@ -186,9 +217,20 @@ header img {
 /* Recent Stories Section */
 .recent-stories {
     padding: 40px 0;
-    max-width: 720px; /* Maintain max-width */
-    width: 100%; /* Ensure full width */
-    margin: 0 auto; /* Center the section */
+    max-width: 720px;
+    /* Maintain max-width */
+    width: 100%;
+    /* Ensure full width */
+    margin: 0 auto;
+    /* Center the section */
+}
+
+.recent-stories-a {
+    text-decoration: none;
+}
+
+.recent-stories-a h3 {
+    color: #22242C
 }
 
 .recent-stories h2 {
@@ -201,8 +243,8 @@ header img {
 }
 
 .story {
-    position: relative; 
-    overflow: hidden; 
+    position: relative;
+    overflow: hidden;
     cursor: pointer;
     padding: 12px;
     margin: -12px;
@@ -221,7 +263,7 @@ header img {
     opacity: 0;
     transition: opacity 0.5s ease;
     border-radius: inherit;
-    z-index: -1; 
+    z-index: -1;
 }
 
 .story:hover::before {
@@ -248,85 +290,191 @@ header img {
 }
 
 /* Say Hi Section */
+
 .say-hi {
-    background: linear-gradient(120deg, #f0f4ff 0%, #fff6fa 100%);
+    background: linear-gradient(90deg, rgba(255, 233, 244, 0.4) 0%, rgba(234, 243, 255, 0.7) 100%);
     border-radius: 16px;
     padding: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    margin: 20px auto; /* Centered with auto margins */
-    max-width: 720px; /* Maintain max-width */
+    margin: 20px auto;
+    /* Centered with auto margins */
+    max-width: 720px;
+    /* Maintain max-width */
+    max-height: 22rem;
 }
 
 .say-hi-content {
+    flex-basis: 50%;
     display: flex;
     flex-direction: column;
     max-width: 60%;
+    /* color */
+}
+
+.say-hi-img {
+    flex-basis: 50%;
+}
+
+.say-hi-content-text {
+    margin: 0.3rem 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+    /* margin: 20px 0px; */
+    letter-spacing: -0.3px;
+    opacity: 0.8;
+    max-width: 340px;
+}
+
+.say-hi-img img {
+    height: 20rem;
 }
 
 .say-hi h2 {
-    font-size: 36px;
-    background: linear-gradient(90deg, #4AB1F1, #D749AF);
+    font-size: 48px;
+    letter-spacing: -1px;
+    background: (90.42deg, #4AB1F1 0.58%, #566CEC 37.22%, #D749AF 73.87%, #FF7C51 112.26%);
+    background-size: 100%;
+    font-weight: bold;
+    background: linear-gradient(90deg, blue, purple, red);
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 16px;
+    color: transparent;
+    margin-bottom: 0.5rem;
 }
 
-.say-hi p {
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 400px;
+    max-width: 90%;
+    position: relative;
+    overflow: hidden;
+}
+
+.card h2 {
+    font-size: 28px;
+
+
+}
+
+.contact-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    margin: 0.3rem 0;
+}
+
+.contact i {
     font-size: 18px;
+    margin-right: 8px;
+    color: #6366f1;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.card p {
+    color: #555;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    width: 13rem;
+    padding: 12px 20px;
+    margin-top: 15px;
+    border-radius: 25px;
+    background: linear-gradient(to right, #6366f1, #e91e63);
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
     opacity: 0.8;
 }
 
-.say-hi a {
-    padding: 10px 20px;
-    border-radius: 24px;
-    background-color: #4AB1F1;
-    color: #fff;
-    text-decoration: none;
+.colorful-text {
+    background: linear-gradient(90deg, blue, purple, red);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 
 /* Footer Styles */
 footer {
-    background: #F8F9FA; /* Light gray background for footer */
+    background: #F8F9FA;
+    /* Light gray background for footer */
     padding: 20px 0;
-    width: 100%; /* Full width */
+    width: 100%;
+    /* Full width */
     text-align: center;
-    position: relative; /* Allows positioning for footer elements */
-    z-index: 100; /* Keep footer on top */
+    position: relative;
+    /* Allows positioning for footer elements */
+    z-index: 100;
+    /* Keep footer on top */
 }
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     header {
-        flex-direction: column; /* Stack elements vertically on smaller screens */
+        flex-direction: column;
+        /* Stack elements vertically on smaller screens */
     }
 
     .projects-grid {
-        grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+        grid-template-columns: repeat(2, 1fr);
+        /* Two columns on medium screens */
     }
 
     .say-hi {
-        flex-direction: column; /* Stack elements vertically on smaller screens */
+        flex-direction: column;
+        /* Stack elements vertically on smaller screens */
     }
 
     .say-hi-content {
-        max-width: 100%; /* Allow full width */
+        max-width: 100%;
+        /* Allow full width */
     }
 
     .recent-stories h2 {
-        font-size: 18px; /* Larger title font size */
+        font-size: 18px;
+        /* Larger title font size */
     }
 }
 
 @media (max-width: 480px) {
     .projects-grid {
-        grid-template-columns: 1fr; /* One column on small screens */
+        grid-template-columns: 1fr;
+        /* One column on small screens */
     }
 
     .say-hi h2 {
-        font-size: 28px; /* Smaller font size for mobile */
+        font-size: 28px;
+        /* Smaller font size for mobile */
     }
 }
