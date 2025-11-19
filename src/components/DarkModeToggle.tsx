@@ -85,6 +85,7 @@ export function DarkModeToggle() {
             from -90deg,
             #00829f ${progressAngle}deg,
             transparent ${progressAngle}deg
+            cursor: pointer
           ),
           ${isDark ? '#262626' : '#ffffff'}
         `,
