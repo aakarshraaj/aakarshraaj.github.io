@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage / Main Portfolio -->
+  <url>
+    <loc>https://www.aakarsh.work/</loc>
+    <lastmod>2025-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Core Competencies Section -->
+  <url>
+    <loc>https://www.aakarsh.work/#skills</loc>
+    <lastmod>2025-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Professional Experience Section -->
+  <url>
+    <loc>https://www.aakarsh.work/#experience</loc>
+    <lastmod>2025-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Side Projects Section -->
+  <url>
+    <loc>https://www.aakarsh.work/#side-projects</loc>
+    <lastmod>2025-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Certifications Section -->
+  <url>
+    <loc>https://www.aakarsh.work/#certifications</loc>
+    <lastmod>2025-11-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Testimonials Section -->
+  <url>
+    <loc>https://www.aakarsh.work/#testimonials</loc>
+    <lastmod>2025-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Contact Section -->
+  <url>
+    <loc>https://www.aakarsh.work/#contact</loc>
+    <lastmod>2025-11-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>
