@@ -85,13 +85,13 @@ export function DarkModeToggle() {
             from -90deg,
             #00829f ${progressAngle}deg,
             transparent ${progressAngle}deg
-            cursor: pointer
           ),
           ${isDark ? '#262626' : '#ffffff'}
         `,
         padding: '4px',
         width: '48px',
         height: '48px',
+        cursor: 'pointer',
         boxShadow: shouldGlow 
           ? '0 0 0 4px rgba(0, 130, 159, 0.15), 0 0 20px rgba(0, 130, 159, 0.3), 0 10px 25px -5px rgba(0, 0, 0, 0.1)'
           : undefined,
