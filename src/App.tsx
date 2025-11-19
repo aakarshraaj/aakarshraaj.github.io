@@ -299,8 +299,7 @@ function Hero() {
                 My strength is mixing <Highlight>research</Highlight>, <Highlight>systems thinking</Highlight>, and <Highlight>storytelling</Highlight>
                 to design interactions that are clean, scalable, and actually enjoyable to use.
                 I’ve worked across the full design spectrum—from scrappy 0→1 explorations to 
-                tightening mature products—always partnering closely with engineering and 
-                product to make things real, not theoretical.
+                tightening mature products.
                 
               </p>
             </FadeIn>
@@ -313,10 +312,10 @@ function Hero() {
                   fontWeight: 400,
                 }}
               >
-                But beyond all that…
+                beyond all that…
 
                 On weekends you’ll find me experimenting with new design tools,
-                obsessing over vibes, code, and little interaction details, or
+                obsessing over vibe code, and little interaction details, or
                 outside playing cricket until my legs give up.
                 
                 I’m constantly learning, tinkering, trying, breaking,
@@ -326,7 +325,7 @@ function Hero() {
                 and where <Highlight>good design isn’t decoration—it’s the engine.</Highlight>
 
                 If you’re building something ambitious and want someone who can bring structure,
-                calm, and creativity to the chaos, I’d love to be part of it.
+                calm, and creativity, I’d love to be part of it.
                 
               </p>
             </FadeIn>
