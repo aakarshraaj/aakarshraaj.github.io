@@ -289,19 +289,34 @@ function Hero() {
                   fontWeight: 400,
                 }}
               >
-                UX Designer with almost 7 years of experience,
-                including 1 year in graphic design and 6 years
-                in UX design, experience in designing for{" "}
-                <Highlight>Agent AI experiences</Highlight>,{" "}
-                <Highlight>
-                  PaaS (Platform as a Service)
-                </Highlight>
-                , low-code/no-code platforms, and{" "}
-                <Highlight>enterprise solutions</Highlight>.
-                Skilled in transforming complex workflows into
-                seamless user interactions through{" "}
-                <Highlight>research-driven design</Highlight>,
-                usability testing, and scalable system thinking.
+                I’m a UX/Product Designer with 7 years of experience across B2B SaaS, PaaS, Ecommerce
+                and enterprise workflows, and in the last couple of years,
+                I’ve been deeply focused on building for
+                <Highlight>Agentic AI and modern tooling around it.</Highlight>.
+
+                I love taking problems that feel overwhelming and turning them
+                into product experiences that feel obvious once you see them.
+                My strength is mixing <Highlight>research</Highlight>, <Highlight>systems thinking</Highlight>, and <Highlight>storytelling</Highlight>
+                to design interactions that are clean, scalable, and actually enjoyable to use.
+                I’ve worked across the full design spectrum—from scrappy 0→1 explorations to 
+                tightening mature products—always partnering closely with engineering and 
+                product to make things real, not theoretical.
+
+                But beyond all that…
+
+                On weekends you’ll find me experimenting with new design tools,
+                obsessing over vibes, code, and little interaction details, or
+                outside playing cricket until my legs give up.
+                
+                I’m constantly learning, tinkering, trying, breaking,
+                fixing—because design isn’t just my job; it’s honestly just how my brain works.
+
+                I thrive in teams where curiosity wins over ego, where builders sit close to users,
+                and where good design isn’t decoration—it’s the engine.
+
+                If you’re building something ambitious and want someone who can bring structure,
+                calm, and creativity to the chaos, I’d love to be part of it.
+                
               </p>
             </FadeIn>
             <FadeIn delay={0.3}>
