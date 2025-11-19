@@ -301,21 +301,6 @@ function Hero() {
                 I’ve worked across the full design spectrum—from scrappy 0→1 explorations to 
                 tightening mature products—always partnering closely with engineering and 
                 product to make things real, not theoretical.
-
-                But beyond all that…
-
-                On weekends you’ll find me experimenting with new design tools,
-                obsessing over vibes, code, and little interaction details, or
-                outside playing cricket until my legs give up.
-                
-                I’m constantly learning, tinkering, trying, breaking,
-                fixing—because design isn’t just my job; it’s honestly just how my brain works.
-
-                I thrive in teams where curiosity wins over ego, where builders sit close to users,
-                and where good design isn’t decoration—it’s the engine.
-
-                If you’re building something ambitious and want someone who can bring structure,
-                calm, and creativity to the chaos, I’d love to be part of it.
                 
               </p>
             </FadeIn>
@@ -328,18 +313,21 @@ function Hero() {
                   fontWeight: 400,
                 }}
               >
-                Experienced in{" "}
-                <Highlight>
-                  end-to-end design processes
-                </Highlight>
-                , from user research and wireframing to
-                prototyping and usability testing. Passionate
-                about <Highlight>storytelling in UX</Highlight>
-                —creating interfaces that are not just
-                functional but also intuitive and engaging.
-                Thrives under pressure, bringing a strategic and
-                detail-oriented approach to problem-solving and
-                innovation.
+                But beyond all that…
+
+                On weekends you’ll find me experimenting with new design tools,
+                obsessing over vibes, code, and little interaction details, or
+                outside playing cricket until my legs give up.
+                
+                I’m constantly learning, tinkering, trying, breaking,
+                fixing—because design isn’t just my job; it’s honestly just how my brain works.
+
+                I thrive in teams where curiosity wins over ego, where builders sit close to users,
+                and where <Highlight>good design isn’t decoration—it’s the engine.</Highlight>
+
+                If you’re building something ambitious and want someone who can bring structure,
+                calm, and creativity to the chaos, I’d love to be part of it.
+                
               </p>
             </FadeIn>
           </div>
