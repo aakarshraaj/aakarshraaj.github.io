@@ -1447,8 +1447,7 @@ html {
 @media print {
   .dark-mode-toggle, .download-resume, button:not(.print-visible), [role="button"]:not(.print-visible) {
     display: none !important;
-    cursor: pointer;
-  }
+    cursor: ; pointer !important;}
 
   body {
     font-size: 12pt;
